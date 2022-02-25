@@ -1,0 +1,31 @@
+/* Napraviti tri diva width height 300px, jedan oznaciti preko klase,jedan preko id,treci preko klase i ida.
+Prvi div-crvena pozadina
+Drugi div- Plava
+Treci div- narandzasta
+i u svakom divu da ima po jedan <p> koji je centriran i koji je gadjan preko id */
+
+
+
+h1{
+    color: aqua;  
+    text-transform: uppercase;
+    text-decoration: underline;
+    
+    width: 200px;
+    
+
+}
+
+/* Klasa se selektuje .ime-klase */
+.naslov{
+    color: orange;
+    text-decoration: underline;
+    text-align: center;
+
+}
+
+#id{
+    color: green;
+    font-size: 60px;
+
+}

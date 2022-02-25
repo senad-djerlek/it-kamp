@@ -1,0 +1,34 @@
+main:hover{
+    background-color: gray;
+}
+main{
+    background-color: rgb(98, 98, 206);
+    border: 3px solid blue;
+    margin:100px auto 100px auto;
+    height: 670px;
+    width: 550px;
+    border-radius: 6px;
+}
+main img{
+    height: 250px;
+    width: 550px;
+}
+main h1{
+
+        text-align: center;
+        color: white;    
+        font-weight: bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+main h2{
+    padding-left: 10px;
+    font-weight: 700px;
+    color: #f2f2f2;
+}
+main p{
+
+   padding: 0 10px 15px 10px;
+
+
+}
+

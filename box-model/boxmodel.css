@@ -1,0 +1,28 @@
+body{
+    background-color: orange;
+}
+
+
+div{
+    width: 500px;
+    height: 500px;
+    background-color: aqua;
+    /* smer kazaljke na satu ako ima 4 cifre */
+    /* margin: 10px 20px 30px 40px; */
+
+     /* top-bottom-left-right */
+    /* margin: 20px 20px; */
+
+/* CENTRIRANJE gore i dole nula piksela, s leva i s desne automatski */
+    margin: 10px 20px;
+
+    border: 10px solid red;
+
+    padding-left: 20px;
+    padding-top: 100px;
+    
+}
+h3{
+    font-size: 50px;
+    margin-bottom: 100px;
+}

@@ -1,0 +1,35 @@
+ body{
+    background-color: grey; 
+     
+}
+.divjedan{
+    width: 930px;
+    height: 470px;
+    background-color: burlywood;
+    display: inline-block;
+    border: solid black 1px;
+
+}
+.divdva{
+    width: 930px;
+    height: 470px;
+    background-color: burlywood;
+    display: inline-block;
+    border: solid black 1px;
+}
+.divtri{    
+    width: 930px;
+    height: 470px;
+    background-color: burlywood;
+    display: inline-block;
+    border: solid black 1px;
+}
+    
+.divcetiri{
+    width: 930px;
+    height: 470px;
+    background-color: burlywood;
+    display: inline-block;
+    border: solid black 1px;
+}
+

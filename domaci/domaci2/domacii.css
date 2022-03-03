@@ -1,35 +1,51 @@
- body{
-    background-color: grey; 
-     
-}
-.divjedan{
-    width: 930px;
-    height: 470px;
-    background-color: burlywood;
-    display: inline-block;
-    border: solid black 1px;
-
-}
-.divdva{
-    width: 930px;
-    height: 470px;
-    background-color: burlywood;
-    display: inline-block;
-    border: solid black 1px;
-}
-.divtri{    
-    width: 930px;
-    height: 470px;
-    background-color: burlywood;
-    display: inline-block;
-    border: solid black 1px;
-}
-    
-.divcetiri{
-    width: 930px;
-    height: 470px;
-    background-color: burlywood;
-    display: inline-block;
-    border: solid black 1px;
+body {
+  background-color: burlywood;
+  text-align: center;
+  padding: 0;
+  margin: 0;
 }
 
+.divjedan {
+  width: 930px;
+  height: 470px;
+  background-color: burlywood;
+  display: inline-block;
+  border: solid black 1px;
+  border-radius: 10px;
+  background-image: url(https://www.planetware.com/wpimages/2020/01/germany-in-pictures-beautiful-places-to-photograph-miltenberg-bavaria.jpg);
+  background-size: contain;
+  box-shadow: 2px 4px 8px rgb(68, 67, 67);
+}
+.divdva {
+  width: 930px;
+  height: 470px;
+  background-color: burlywood;
+  display: inline-block;
+  border: solid black 1px;
+  border-radius: 10px;
+  background-image: url(https://media.timeout.com/images/105124791/750/422/image.jpg);
+  background-size: contain;
+  box-shadow: 2px 4px 8px rgb(68, 67, 67);
+}
+.divtri {
+  width: 930px;
+  height: 470px;
+  background-color: burlywood;
+  display: inline-block;
+  border: solid black 1px;
+  border-radius: 10px;
+  box-shadow: 2px 4px 8px rgb(68, 67, 67);
+  background-image: url(https://img.huffingtonpost.com/asset/5b9e3c41240000310053e64d.jpeg?ops=scalefit_960_noupscale);
+  background-size: contain;
+}
+
+.divcetiri {
+  width: 930px;
+  height: 470px;
+  background-color: burlywood;
+  display: inline-block;
+  border: solid black 1px;
+  border-radius: 10px;
+  box-shadow: 2px 4px 8px rgb(68, 67, 67);
+  background-image: url(https://res.cloudinary.com/culturemap-com/image/upload/ar_4:3,c_fill,g_faces:center,w_980/v1511984100/photos/107440_original.jpg);
+}

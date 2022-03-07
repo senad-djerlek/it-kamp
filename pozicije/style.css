@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+}
+
+.navbar{
+    height: 10vh;
+    background-color: red;
+    width: 100vw;
+    position: fixed;
+}
+
+.hero{
+    height: 30vh;
+    background-color: blue;
+    width: 100vw;
+    /* position: fixed;
+    top: 30vh; */
+    margin-bottom:2000px;
+}
+
+.footer{
+   background-color: blueviolet;
+   height: 10vh;  
+   position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
+
+.relative{
+    position: relative;
+    width: 50%;
+    height: 20vh;
+    margin: 0 auto; 
+    background-color: red;
+
+}
+
+
+.absolute{
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    height: 300px;
+    background-color: green;
+}

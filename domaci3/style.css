@@ -1,0 +1,90 @@
+.kocka{
+    margin: 200px auto;
+    width: 500px;
+    height: 500px;
+    background-color: red;
+    position: relative;
+    
+}
+.rupa-jedan{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 10px solid blue;
+    border-radius: 30px;
+    top: -18px;
+    left: -14px;
+    
+}
+.rupa-dva{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 10px solid blue;
+    top: 205px;
+    border-radius: 30px;
+    right: 480px;
+}
+
+.rupa-tri{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 10px solid blue;
+    bottom: -15px;
+    left: -17px;
+    /* right: -5px; */
+    border-radius: 30px;
+}
+
+.rupa-cetiri{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 10px solid blue;
+    border-radius: 30px;
+    right: 235px;
+    bottom: 479px;
+}
+
+.rupa-pet{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 10px solid blue;
+    border-radius: 30px;
+    top: 480px;
+    right: 225px;
+}
+
+.rupa-sest{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 10px solid blue;
+    border-radius: 30px;
+    left: 480px;
+    bottom: 475px;
+}
+.rupa-sedam{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 10px solid blue;
+    border-radius: 30px;
+    top: 205px;
+    left: 480px;
+}
+.rupa-osam{
+   position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 10px solid blue;
+    border-radius: 30px;
+    top: 479px;
+    left: 480px;
+    
+ 
+}
+
+

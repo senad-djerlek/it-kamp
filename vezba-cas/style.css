@@ -4,7 +4,7 @@
 header{
     width: 100%;
     height: 10vh;
-    background-color: bisque;
+    background-color: rgb(168, 130, 83);
 }
 .naslov{
     
@@ -28,7 +28,7 @@ li a{
 }
 li a:hover{
     border-radius: 10px;
-    background-color:rgb(251, 214, 169);
+    background-color:rgb(189, 157, 118);
 }
 
 main{
@@ -43,13 +43,18 @@ main{
 .tekst h2{
     margin-bottom: 10px;
     font-size: 60px;    
-    color: rgb(53, 39, 2);
+    color: rgb(15, 15, 15);
     
 }
 .tekst p{
-    color: rgb(231, 191, 117);
+    color:rgb(0, 0, 0);
     font-size: 25px;
 }
+.tekst p span a{
+    color: rgb(124, 25, 25);
+    text-decoration: none;
+}
+
 
 .slika{
     position: absolute;

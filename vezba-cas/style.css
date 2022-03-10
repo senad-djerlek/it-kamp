@@ -36,3 +36,72 @@ main{
     height: 70vh;
     background-color: rgb(199, 143, 60);
 }
+.tekst{
+   padding: 25px 25px;
+   
+}
+.tekst h2{
+    margin-bottom: 10px;
+    font-size: 60px;    
+    color: rgb(53, 39, 2);
+    
+}
+.tekst p{
+    color: rgb(231, 191, 117);
+    font-size: 25px;
+}
+
+.slika{
+    position: absolute;
+    left: 1500px;
+    bottom: 700px;
+}
+.akcija{
+    position: relative;
+    height: 50px;
+    width: 50px;
+    top: -250px;
+    right: -200px;
+    background-color: rgb(148, 116, 10);
+    border-radius: 50%;
+}
+.akcija p{
+    color: whitesmoke;
+    padding-top: 15px;
+    padding-left: 11px;
+}
+.kocke{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 150px auto;
+}
+.kocka-1{
+    height: 300px;
+    width: 300px;
+    background-color:wheat;
+}
+
+.kocka-2{
+    height: 300px;
+    width: 300px;
+    background-color:rgb(245, 211, 149);
+
+}
+.kocka-3{
+    height: 300px;
+    width: 300px;
+    background-color:rgb(250, 203, 115);
+}
+footer{
+    width: 100%;
+    height: 20vh;
+    background-color: rgb(97, 71, 46);
+}
+footer p{
+    text-align: center;
+    padding: 100px;
+    color: blanchedalmond;
+    font-size: 30px;
+    font-weight: bold;
+}

@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+}
+
+.navigacija{
+    width: 100%;
+    height: 10vh;
+    background-color: green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigacija h1{
+    padding-left: 10px;
+}
+
+.navigacija a{
+    text-decoration: none;
+    color: white;
+    padding: 14px;
+}
+main{
+    width: 100%;
+    height: 50vh;
+    background-color: greenyellow;
+}
+.kocke{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding-top: 60px;
+    
+}
+.kocka1{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(6, 202, 72);
+
+}
+.kocka2{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(26, 165, 33);
+}
+.kocka3{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(20, 185, 28);
+}

@@ -3,7 +3,6 @@
     }
 
 .nav{
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,14 +14,13 @@
  .header{
      padding-left: 280px;
  }
+
+
  span{
      color: blue;
  }
  
-
  .nav-buttons a{
-     /* padding-left:10px;
-     padding-right: 15px; */
     color: black;
     text-decoration: none;
     font-size: 1rem;
@@ -34,8 +32,8 @@
  }
  
  main{
-    background-image: url(https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?size=626&ext=jpg);
-   background-size: cover;
+     background-image: url(https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?size=626&ext=jpg);
+     background-size: cover;
      width: 100%;
      height: 75vh;
      background-color: rgb(215, 200, 241);
@@ -80,8 +78,15 @@
     color: rgb(72, 72, 250);
 }
  
+.tekst-kocki{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    font-size: 20px;
+}
 .kocke{
-
     border-radius: 10px;
     display: flex;
     gap: 10px;
@@ -90,7 +95,6 @@
     margin-bottom: 100px;
     padding: 150px;
 }
-
 .sliika img{
     object-fit: fill;
     overflow: hidden;
@@ -102,50 +106,32 @@
     color: rgb(0, 0, 0);
     padding-left: 30px;
 }
-
-.tekst-kocki{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
-    font-size: 20px;
-}
-
-/* .kocka1 p{
-    position: relative;
-    margin-top: 300px;
-    height: 50px;
-    width: 300px;
-    background-color: rgb(223, 7, 7); 
-} */
-
 .kocka1{
     height: 360px;
     width: 300px;
     background-color: rgb(126, 121, 121); 
-    border-radius: 5px;
+    border-radius: 4px;
     
 }
 .kocka2{
     height: 360px;
     width: 300px;
     background-color: rgb(126, 121, 121);
-    border-radius: 10px;
+    border-radius: 4px;
 
 }
 .kocka3{
     height: 360px;
     width: 300px;
     background-color: rgb(126, 121, 121);
-    border-radius: 10px;
+    border-radius: 4px;
 
 }
 .kocka4{
     height: 360px;
     width: 300px;
     background-color: rgb(126, 121, 121);
-    border-radius: 10px;
+    border-radius: 4px;
 
 }
 .spanclass{

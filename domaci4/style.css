@@ -75,6 +75,7 @@
 }
  
 .kocke{
+    border-radius: 10px;
     display: flex;
     gap: 10px;
     justify-content: center;
@@ -83,7 +84,11 @@
     padding: 150px;
 }
 
-
+.sliika {
+    object-fit: fill;
+    overflow: hidden;
+    border-radius: 10px;
+}
 
 .tekst-slike{
     padding: 10px;
@@ -107,26 +112,41 @@
     width: 300px;
     background-color: rgb(223, 7, 7); 
 } */
+.kocke{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: -80px;
+    margin-bottom: 100px;
+    padding: 150px;
+}
 .kocka1{
     height: 300px;
     width: 300px;
-    background-color: rgb(200, 221, 241);
+    background-color: rgb(200, 221, 241); 
     border-radius: 10px;
+    
 }
 .kocka2{
     height: 300px;
     width: 300px;
     background-color: rgb(200, 221, 241);
+    border-radius: 10px;
+
 }
 .kocka3{
     height: 300px;
     width: 300px;
     background-color: rgb(200, 221, 241);
+    border-radius: 10px;
+
 }
 .kocka4{
     height: 300px;
     width: 300px;
     background-color: rgb(200, 221, 241);
+    border-radius: 10px;
+
 }
 .spanclass{
     margin-left: 240px;

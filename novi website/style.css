@@ -78,8 +78,15 @@ main {
 .slike{
     margin-top: 250px;
     margin-left: 150px;
-    float: left;
+    display: flex;
+}
+
+.slika-2{
+  position: relative;
 }
 
 .slika-3{
+  position: relative;
+  top: 245px;
+  left: -244px;
 }

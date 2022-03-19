@@ -1,42 +1,76 @@
-*{
-    margin: 0;
+* {
+  margin: 0;
 }
-body{
-    font-family: "Josefin Sans",sans-serif;
+body {
+  font-family: "Josefin Sans", sans-serif;
 }
-.nav{
-    width: 100%;
-    height: 10vh;
-    background-color: antiquewhite;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.nav {
+  width: 100%;
+  height: 10vh;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.logo{
-    margin-left: 350px;
+.logo {
+  margin-left: 380px;
 }
-
-.navigacija{
-    display: flex;
-    align-items: center;
-    padding-right: 300px;
-    text-decoration: none;
-    gap: 20px;
- }
-
-.navigacija li{
-    list-style: none;
+.nav-buttons ul {
+  display: flex;
+  gap: 10px;
+  margin-right: 350px;
+  list-style: none;
 }
-
-.navigacija a{
-    text-decoration: none;
+.nav-buttons li a {
+  font-family: "Rajdhani", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
 }
-
+.nav-buttons a {
+  padding-right: 33px;
+  margin: 10px;
+  color: black;
+  text-decoration: none;
+}
 .btn {
-    font-size: 15px;
-    font-weight: 700px;
-    text-transform: uppercase;
-    padding: 14px 35px 12px;
-    background: #BFB332;
-    letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 14px 35px 17px;
+  background: #bfb332;
+  letter-spacing: 2px;
+}
+.nav-buttons .btn {
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+main {
+  width: 100%;
+  height: 70vh;
+  background-color: blue;
+  background-image: url(https://preview.colorlib.com/theme/woodwork/img/hero/hero-1.jpg.webp);
+  background-size: cover;
+}
+.tekst {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 30px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 220px;
+}
+
+.btn-2 {
+  font-family: "Josefin Sans", sans-serif;
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 14px 35px 15px;
+  color: white;
+  background: #bfb332;
 }

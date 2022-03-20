@@ -75,18 +75,32 @@ main {
   background: #bfb332;
 }
 
-.slike{
-    margin-top: 250px;
-    margin-left: 150px;
-    display: flex;
+.slike {
+  margin-top: 350px;
+  margin-left: 350px;
+  display: flex;
+  position: absolute;
 }
 
-.slika-2{
+.slika-1{
   position: relative;
+  right: 3px;
+
 }
+
 
 .slika-3{
   position: relative;
-  top: 245px;
-  left: -244px;
+  top: 250px;
+  left: -245px;
+}
+
+.tekst-pored-slike{
+    display: flex;
+    flex-direction: column;
+    top: 300px;
+}
+
+.tekst-pored-slike h3{
+    color: #DEC138;
 }

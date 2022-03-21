@@ -78,62 +78,32 @@ main {
 }
 
 .slike {
-  margin-top: 350px;
-  margin-left: 350px;
   display: flex;
-  position: absolute;
+  flex-direction: row;
+  flex: 1;
+  justify-content: flex-end;
+  padding: 20px;
 }
 
-.slika-1{
-  position: relative;
-  right: 3px;
-
+.opis {
+  flex: 1;
+  padding: 20px;
 }
 
-.slika-3{
-  position: relative;
-  top: 250px;
-  left: -245px;
+.sekcija {
+  padding: 120px;
 }
 
-.tekst-pored p{
-  margin-top: 25px;
-  position: relative;
-  right: 220px;
-  line-height: 27px;
-}
-
-.tekst-pored h1{
- position: relative;
- top: 10px;
- right: 220px;
- font-size: 42px;
- text-transform: uppercase;
- font-weight: 600;
- line-height: 54px;
-}
-
-.tekst-pored h3{
-  position: relative;
-  left: -220px;
-  font-size: 14px;
-  color: #bfb332;
-  font-family: 'Josefin Sans',sans-serif;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-
-.tekst-pored-2{
-  font-size: 42px;
-  font-weight: 600;
-  font-family: "Rajdhani", sans-serif;
+.sekcija-1 {
   display: flex;
-  justify-content: space-evenly;
-  margin-top: -320px;
-  margin-left:-780px;
-  padding: 350px;
 }
-.tekst-pored .prvi-broj{
-  margin-left: 350px;
+
+.slika-1,
+.slika-2 {
+  margin: 5px;
+}
+
+.opis-content {
+  padding-top: 12px;
+  padding-right: 30%;
 }

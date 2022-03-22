@@ -224,31 +224,109 @@ main {
   font-size: 14px;
   text-transform: uppercase;
 }
-.about-home{
+.about-home {
   margin-top: 100px;
   gap: 1px;
   display: flex;
   justify-content: center;
 }
 
-.after-home{
+.after-home {
+  margin-left: 70px;
   margin-top: 100px;
   display: flex;
   justify-content: space-evenly;
 }
 
-.btn-home{
-  text-transform: uppercase;
-  text-align: center;
-  width: 150px;
-  border: 2px solid #bfb332;
-  padding: 15px;
+.classy-2 {
   color: #111111;
-  font-size: 15px;
-  font-weight: bolder;
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 15px;
 }
 
+.btn-home {
+  color: black;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  padding: 20px;
+  border: 2px solid #bfb332;
+  padding-bottom: 0;
+  text-align: center;
+  width: 150px;
+  height: 30px;
+  background-color: rgb(255, 255, 255);
+}
 
-.btn-home a{
+.btn-home a {
   text-decoration: none;
+}
+.classy {
+  color: #bfb332;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.classy-2 {
+  font-size: 35px;
+}
+.items-home {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.fa {
+  margin-bottom: 20px;
+  font-size: 50px;
+}
+.staff {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111111;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.blizu-futera{
+  margin-top: 150px;
+  background-image: url(https://preview.colorlib.com/theme/woodwork/img/call-bg.jpg.webp);
+  width: 100%;
+  height: 50vh;
+  background-color: blue;
+  background-size: cover;
+}
+.ispod-futera{
+  width: 100%;
+  height: 50vh;
+  background-color: #201F16; 
+  display: flex;
+  justify-content: space-evenly;
+}
+.tekst{
+  padding-top: 150px;
+  font-size: 45px;
+  letter-spacing: 2px;
+}
+.spanspan{
+  margin-left: 15px;
+}
+.logo-ispod-futera{
+  padding-top: 50px;
+  padding-left: 250px;
+}
+.slika-mape{
+  padding-top: 50px;
+}
+.ispod-futera{
+  padding-top: -100px;
+}
+.paaragraf{
+  padding-top: 25px;
+  color: white;
+}
+.adrese{
+  color:#B09524;
 }

@@ -330,3 +330,23 @@ main {
 .adrese{
   color:#B09524;
 }
+
+@media only screen and (max-width: 600px){
+    body{
+      width: 900px;
+      height: 450px;
+    }
+    .logo{
+      margin-left: 10px;
+      padding: -500px;
+    }
+    .nav-buttons ul{
+      margin:0;
+      gap: 0;
+    }
+    .tekst{
+      margin-right: 550px;
+      text-align: center;
+      font-size: 25px;
+    }
+ }

@@ -43,6 +43,7 @@
     text-decoration: none;
 }
 .btn-1{
+    text-decoration: none;
     color: white;
     padding: 15px 60px 17px;
     background-color: #594ACD;
@@ -51,4 +52,24 @@
     border: 1px solid white;
     padding: 15px 60px 17px;
     color: white;
+}
+.laptop{
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.slika-laptop{
+    margin-bottom: 50px;
+    margin-left: 300px;
+}
+.tekst-laptop{
+    margin-top: -150px;
+    margin-right: 500px;
+}
+.tekst-laptop h1{
+    margin-bottom: 15px;
+}
+.tekst-laptop p{
+    margin-bottom: 50px;
 }

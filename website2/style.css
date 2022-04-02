@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+}
+
+.header{
+    width: 100%;
+    height: 8vh;
+    background-color: rgb(246, 246, 248);
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+.header a{
+    text-decoration: none;
+    padding: 15px;
+}
+.header .logo{
+    margin-left: 370px;
+}
+.header .links{
+    margin-right: 400px;
+}
+
+.main-content{
+    height: 100vh;
+    margin-bottom: 15px;
+    background-image: url("https://colorlibhub.com/wp-content/uploads/sites/59/2016/03/photo-1443527216320-7e744084f5a7-1.jpg"); 
+    background-size: cover ;
+    background-position: 1px;
+    text-align: center;
+    color: white;
+}
+.sadrzaj{
+    padding-top: 350px;
+    margin-bottom: 50px;
+}
+.sadrzaj h1{
+    margin-bottom: 20px;
+}
+
+.buttoni a{
+    text-decoration: none;
+}
+.btn-1{
+    color: white;
+    padding: 15px 60px 17px;
+    background-color: #594ACD;
+}
+.btn-2{
+    border: 1px solid white;
+    padding: 15px 60px 17px;
+    color: white;
+}

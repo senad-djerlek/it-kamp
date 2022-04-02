@@ -40,6 +40,7 @@
 }
 
 .buttoni a {
+  margin: 3px;
   text-decoration: none;
 }
 .btn-1 {
@@ -94,3 +95,23 @@
   margin-bottom: 50px;
 }
 
+.ispod-laptopa{
+  background-image: url("https://colorlibhub.com/wp-content/uploads/sites/59/2016/12/photo-1452723312111-3a7d0db0e024.jpg");
+  background-position: 1px;
+  background-size: cover;
+  height: 40vh;
+  margin-bottom: 150px;
+  width: 100%;
+  margin-top: 130px;
+  text-align: center;
+}
+.text-ispod-laptopa{
+  color: white;
+  padding-top: 80px;
+}
+.ha{
+  margin-bottom: 15px;
+}
+.pe{
+  margin-bottom: 40px;
+}

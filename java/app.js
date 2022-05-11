@@ -23,6 +23,7 @@
 // console.log (age++);    
 // console.log(age);
 // age= age-1;
+// console.log(age)
 
 // const age = prompt("unesi tvoje godine");
 // if (+age === 18) {
@@ -47,11 +48,11 @@
 // else {
 //     console.log ("Izvrsava se samo u slucaju kada ni jedan uslov nije zadovoljen")
 // }
-// const a = 4;
-// const b = 5;
-// const c = 0;
+    // const a = 4;
+    // const b = 5;
+    // const c = 0;
 
-// console.log ( a && b && c); -- and
+    // console.log ( a && b && c); -- and
 
 // const a = 4;
 // const b = 10;
@@ -59,5 +60,60 @@
 // console.log (a || b); - or
 
 // console.log(!false); 
+// const age = prompt("unesi tvoje godine");
 
+// if (+age >= 18 || +age < 40) {
+//     console.log("odrastao si ")
 
+// }
+// else if( +age >11 || age < 18) {
+//     console.log("tinejdzer")
+
+// }
+
+// else {
+//     console.log("dete");
+// }
+//3 petlje:
+// for petlja
+// while petlja
+//do while petlja;
+// let suma = 0;
+
+// for(let i=0; i <= 15; i++) {
+//   if (i % 2 === 0){
+//     suma = suma + i;
+//     console.log("BROJAC" , i);
+//     console.log("Suma",suma);
+//     // console.log(suma);
+//   }
+// }
+
+// while (uslov) {
+//     radi nesto
+// }
+
+// let suma= 0;
+// for (let i = 0; i< 10; i++){
+//     console.log("Brojac", i)
+//     if(i % 2 === 0) { //paran broj
+//         console.log("Brojac unutar uslova",i)
+//         suma += i
+
+//     }
+// }
+// console.log("suma",suma);
+    let n = 20;
+    while (n === 20) {
+        console.log("Unutar while petlje");
+        break;
+        n=21;
+ }
+
+ //FIZZ BUZZ CHALLENGE
+
+ // IDEMO OD BROJEVA OD 0 DO 100 I ISPISUJEMO TE BROJEVE;
+ //AKO JE BROJ DELJIV SA 3 ISPISUJEMO FIZZ
+ //AKO JE BROJ DELJIV SA 5 ISPISUJETE BUZZ
+ // AKO JE BROJ DELJIV SA 3 I SA 5 ISPISUJEMO FIZZ BUZZ
+ 

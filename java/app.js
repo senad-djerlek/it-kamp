@@ -64,7 +64,6 @@
 
 // if (+age >= 18 || +age < 40) {
 //     console.log("odrastao si ")
-
 // }
 // else if( +age >11 || age < 18) {
 //     console.log("tinejdzer")
@@ -103,12 +102,12 @@
 //     }
 // }
 // console.log("suma",suma);
-    let n = 20;
-    while (n === 20) {
-        console.log("Unutar while petlje");
-        break;
-        n=21;
- }
+//     let n = 20;
+//     while (n === 20) {
+//         console.log("Unutar while petlje");
+//         break;
+//         n=21;
+//  }
 
  //FIZZ BUZZ CHALLENGE
 
@@ -116,4 +115,15 @@
  //AKO JE BROJ DELJIV SA 3 ISPISUJEMO FIZZ
  //AKO JE BROJ DELJIV SA 5 ISPISUJETE BUZZ
  // AKO JE BROJ DELJIV SA 3 I SA 5 ISPISUJEMO FIZZ BUZZ
- 
+
+let suma= 0;
+for (let i = 0; i <100; i++) {
+    if (i % 3 === 0)
+    console.log("Fizz", i);
+   else if ( i % 5 == 0)
+    console.log("Buzz",i);
+     if ( i % 3 === 0 && i % 5 === 0)
+    console.log("fizzBuzz",i )
+
+
+}

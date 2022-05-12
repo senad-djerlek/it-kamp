@@ -118,12 +118,14 @@
 
 let suma= 0;
 for (let i = 0; i <100; i++) {
-    if (i % 3 === 0)
+    if ( i % 3 === 0 && i % 5 === 0)
+    console.log("fizzBuzz",i )
+   else if (i % 3 === 0)
     console.log("Fizz", i);
    else if ( i % 5 == 0)
     console.log("Buzz",i);
-     if ( i % 3 === 0 && i % 5 === 0)
-    console.log("fizzBuzz",i )
-
+    else {
+        console.log(i);
+    }
 
 }

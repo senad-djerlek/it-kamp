@@ -115,17 +115,99 @@
  //AKO JE BROJ DELJIV SA 3 ISPISUJEMO FIZZ
  //AKO JE BROJ DELJIV SA 5 ISPISUJETE BUZZ
  // AKO JE BROJ DELJIV SA 3 I SA 5 ISPISUJEMO FIZZ BUZZ
+// const rec= "Sta ste radili danas"
+// let counter = 0;
+// for (let i = 0; i< rec.length; i++){
+//     if (rec[i].toLocaleLowerCase() === "a"){
+//         counter++;
+//     }
+// }
+// console.log(counter);
 
-let suma= 0;
-for (let i = 0; i <100; i++) {
-    if ( i % 3 === 0 && i % 5 === 0)
-    console.log("fizzBuzz",i )
-   else if (i % 3 === 0)
-    console.log("Fizz", i);
-   else if ( i % 5 == 0)
-    console.log("Buzz",i);
-    else {
-        console.log(i);
-    }
+// const string = "ovo je string";
+// let newString = " ";
 
+// for let (i = 0 ; i < string.length; i++) {
+//  const element = string [i];
+
+//     if (i === 0 ) {
+//         newString += element.toUpperCase();
+        
+//     } else if (string [i-1] === ""){
+//         newString += element.toUpperCase();
+//     } else {
+//         newString += element;
+//     }
+    
+// }
+
+// console.log(newString);
+
+// const string = "ovo je string";
+// let newString = "";
+
+// for (let i=0; i< string.length; i++ ){
+
+// }
+
+
+// for (let i = 0; i <100; i++) {
+//     if ( i % 3 === 0 && i % 5 === 0)
+//     console.log("fizzBuzz",i )
+//    else if (i % 3 === 0)
+//     console.log("Fizz", i);
+//    else if ( i % 5 == 0)
+//     console.log("Buzz",i);
+//     else {
+//         console.log(i);
+//     }
+
+// }
+// let godine= 15;
+
+// switch(godine) {
+//     case 20:
+//         console.log("Ima 20 ili vise godina")
+//         break;
+//         case 15:
+//         console.log("Ima 15 godina");
+//         break;
+//         default:
+//         console.log("Nije upao ni u jedan case");
+// }
+
+// if (godine >= 20){
+//     console.log(nesto)
+// }
+
+// const isSunny= true;
+// let godine = 17;
+
+// let daLiJePunoletan = godine >= 18 ? true : false;
+// console.log("punoletan",daLiJePunoLetan);
+
+// isSunny ? console.log("Danas je suncano") : console.log("nije suncano")
+
+// if (isSunny) {
+//     console.log("Ponesi naocare")
+//       }
+//     else{
+//         console.log("nemoj da nosis naocare");
+//     }
+
+
+//TERNARY OPERATOR
+
+
+
+//mdn web docs
+
+    // if(isSunny) // if(isSunny === true)
+    // if (!isSunny) // if(isSunny !== true) || if(isSunny === false)
+
+
+if (""){
+    console.log("Tacna vrednost ili thruthy")
+} else {
+    console.log("Netacna vrednost ili falsy")
 }

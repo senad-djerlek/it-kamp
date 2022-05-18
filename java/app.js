@@ -206,8 +206,38 @@
     // if (!isSunny) // if(isSunny !== true) || if(isSunny === false)
 
 
-if (""){
-    console.log("Tacna vrednost ili thruthy")
-} else {
-    console.log("Netacna vrednost ili falsy")
-}
+// if (""){
+//     console.log("Tacna vrednost ili thruthy")
+// } else {
+//     console.log("Netacna vrednost ili falsy")
+// }
+
+//NIZOVI
+
+const niz = ["BMW",4,undefined ,"VW",null, NaN, false,true, "sadas","kurs"  ]
+
+
+// for (let clan in niz){
+//     console.log("Index",clan, "Vrednost clana",niz[clan]);
+// }
+
+const studenti = ["Marko","Janko","Sasa"];
+
+studenti[8]= "Zika";
+
+console.log(studenti);
+
+
+
+
+
+
+
+// for (let i=0; i<cars.length; i++){
+//     if (cars [i]){
+//         console.log(cars[i]);
+//     }
+    
+
+                //0 , 1,    2             3,         4
+// console.log(cars[1],cars[3]);

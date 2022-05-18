@@ -214,18 +214,18 @@
 
 //NIZOVI
 
-const niz = ["BMW",4,undefined ,"VW",null, NaN, false,true, "sadas","kurs"  ]
+// const niz = ["BMW",4,undefined ,"VW",null, NaN, false,true, "sadas","kurs"  ]
 
 
 // for (let clan in niz){
 //     console.log("Index",clan, "Vrednost clana",niz[clan]);
 // }
 
-const studenti = ["Marko","Janko","Sasa"];
+// const studenti = ["Marko","Janko","Sasa"];
 
-studenti[8]= "Zika";
+// studenti[8]= "Zika";
 
-console.log(studenti);
+// console.log(studenti);
 
 
 
@@ -241,3 +241,25 @@ console.log(studenti);
 
                 //0 , 1,    2             3,         4
 // console.log(cars[1],cars[3]);
+
+
+// const fruits = ["Banana","Appple","Pear"];
+// fruits [2] = 2;
+// for (let fruit in fruits){
+//     console.log(fruits[fruit])
+// }
+
+const beverages = ["Sparkling water","Mineral Water","Still water"];
+
+for (let beverage in beverages){
+    console.log(beverages[beverage]);
+    if (beverages){
+        console.log ("true")
+    } else {
+        console.log("not true")
+    }
+    
+}
+
+
+

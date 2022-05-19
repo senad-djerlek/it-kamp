@@ -261,5 +261,13 @@ for (let beverage in beverages){
     
 }
 
+// const cars = ["Audi", "BMW","Mercedes"];
+
+// for (let car in cars){
+//     console.log(cars[car])
+//     if (!cars){
+//         console.log("netacna vrednost", cars)
+//     }
+// }
 
 

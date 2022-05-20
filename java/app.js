@@ -249,17 +249,17 @@
 //     console.log(fruits[fruit])
 // }
 
-const beverages = ["Sparkling water","Mineral Water","Still water"];
+// const beverages = ["Sparkling water","Mineral Water","Still water"];
 
-for (let beverage in beverages){
-    console.log(beverages[beverage]);
-    if (beverages){
-        console.log ("true")
-    } else {
-        console.log("not true")
-    }
+// for (let beverage in beverages){
+//     console.log(beverages[beverage]);
+//     if (beverages){
+//         console.log ("true")
+//     } else {
+//         console.log("not true")
+//     }
     
-}
+// }
 
 // const cars = ["Audi", "BMW","Mercedes"];
 
@@ -270,4 +270,69 @@ for (let beverage in beverages){
 //     }
 // }
 
+
+// function saberi_tri_pet(){
+//     const zbir = 3 + 5;
+//     return zbir;
+    
+// }
+
+// function saberi(prviBroj,drugiBroj){
+//     return prviBroj + drugiBroj;
+// }
+
+// function pozdrav(ime){
+//     alert("Pozdrav Korisnice" + "" + ime);
+// }
+
+//  pozdrav("Marko");
+
+// const saberi = function () {
+//     //funkcija drugi
+// }
+
+// const arroisjdaiwFunc == () ==> {
+//     //funkcija
+
+// console.log(saberi_tri_pet());
+
+
+// function inchToCm(inch){
+//     return inch * 2.54;
+// }
+
+// console.log(inchToCm(10))
+
+
+// const visina = inchToCm(25);
+
+// console.log(visina);
+
+
+// const inchToCm = inch =>  inch * 2.54;
+
+
+// console.log(inchToCm(10));
+
+// const saberi = (a,b) => a + b;
+
+// console.log(saberi(10,1));
+
+// const name = "Faris";
+
+// function nekaFunkcija () {
+//     const name = "Jusuf";
+// }
+
+function sabiraj  (prvi, drugi, treci = false) 
+{
+    if(treci) {
+        return prvi + drugi + treci;
+    } else {
+        return prvi +drugi;
+    }
+}
+console.log(sabiraj(2,2,10));
+//napraviti program koji ce  3 puta korisnika da pita za njegov input
+// funkcija koja ce da pomnozi ta tri broja i da ga izbaci u alert
 

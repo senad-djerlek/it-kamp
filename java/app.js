@@ -324,15 +324,33 @@
 //     const name = "Jusuf";
 // }
 
-function sabiraj  (prvi, drugi, treci = false) 
-{
-    if(treci) {
-        return prvi + drugi + treci;
-    } else {
-        return prvi +drugi;
-    }
-}
-console.log(sabiraj(2,2,10));
+// function sabiraj  (prvi, drugi, treci = false) 
+// {
+//     if(treci) {
+//         return prvi + drugi + treci;
+//     } else {
+//         return prvi +drugi;
+//     }
+// }
+// console.log(sabiraj(2,2,10));
 //napraviti program koji ce  3 puta korisnika da pita za njegov input
 // funkcija koja ce da pomnozi ta tri broja i da ga izbaci u alert
+
+let broj = prompt("Unesi broj")
+console.log(broj);
+let brojDva = prompt("Unesi drugi broj")
+console.log(brojDva);
+let brojTri = prompt("Unesi treci broj")
+console.log(brojTri)
+
+
+function mnozenjeUnetihBrojeva (broj,brojDva,brojTri) {
+    const mnozenje = broj * brojDva * brojTri
+    return mnozenje;
+}
+
+alert(mnozenjeUnetihBrojeva(broj , brojDva, brojTri));
+
+// alert(sabiranjeUnetihBrojeva(broj,brojDva,brojTri));
+
 

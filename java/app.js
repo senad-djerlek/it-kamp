@@ -402,8 +402,14 @@ console.log(spojenNiz);
 
 //TRAZENJE CLANA NIZA - find();
 
-const trazenaVrednost = cars.find(el => el === "Smart");
+const trazenaVrednost = cars.find((el) => console.log(el) );
 console.log(trazenaVrednost);
+
+
+//TRAZENJE INDEKSA - find indeks trazeni indeks
+
+const trazeniIndex = age.findIndex(el => el <100);
+console.log(trazeniIndex);
 
 
 // const godine = [12 , 76, 26, 6 , 23 , 21 ,29 ,16];

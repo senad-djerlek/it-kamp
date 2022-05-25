@@ -336,21 +336,100 @@
 //napraviti program koji ce  3 puta korisnika da pita za njegov input
 // funkcija koja ce da pomnozi ta tri broja i da ga izbaci u alert
 
-let broj = prompt("Unesi broj")
-console.log(broj);
-let brojDva = prompt("Unesi drugi broj")
-console.log(brojDva);
-let brojTri = prompt("Unesi treci broj")
-console.log(brojTri)
+// let broj = prompt("Unesi broj")
+// console.log(broj);
+// let brojDva = prompt("Unesi drugi broj")
+// console.log(brojDva);
+// let brojTri = prompt("Unesi treci broj")
+// console.log(brojTri)
 
 
-function mnozenjeUnetihBrojeva (broj,brojDva,brojTri) {
-    const mnozenje = broj * brojDva * brojTri
-    return mnozenje;
-}
+// function mnozenjeUnetihBrojeva (broj,brojDva,brojTri) {
+//     const mnozenje = broj * brojDva * brojTri
+//     return mnozenje;
+// }
 
-alert(mnozenjeUnetihBrojeva(broj , brojDva, brojTri));
+// alert(mnozenjeUnetihBrojeva(broj , brojDva, brojTri));
+
+
+
 
 // alert(sabiranjeUnetihBrojeva(broj,brojDva,brojTri));
+
+// const cars = ["Bmw","Audi","Smart"];
+// // cars[3] = "MB"
+// //Dodavanje elemenata na kraj niza
+// cars.push("Mercedes");
+
+// //ZA BRISANJE ZADNJEG CLANA - POP
+
+// cars.pop();
+// const popValue = cars.pop();
+// console.log(cars);
+// console.log(popValue);
+
+//ZA DODAVANJE NA POCETAK NIZA - unshift
+
+const cars = ["Bmw","Audi","Smart"];
+cars.push("Mercedes","Fiat,Mini")
+
+cars.unshift("Ford","Kadilak", 4, "Nesto");
+
+
+
+//ZA BRISANJE PRVOG CLANA NIZA - shift
+cars.shift();
+
+const shiftValue = cars.shift();
+console.log(shiftValue);
+
+
+console.log(cars);
+
+
+//OBRNI NIZ - reverse
+
+cars.reverse();
+console.log(cars);
+
+//SPAJANJE DVA NIZA - concat(niz);
+
+const imena = ["faris" , "isko", "aldinn"]
+const age = [20,100,50];
+
+const spojenNiz = imena.concat(age);
+console.log(spojenNiz);
+
+//TRAZENJE CLANA NIZA - find();
+
+const trazenaVrednost = cars.find(el => el === "Smart");
+console.log(trazenaVrednost);
+
+
+// const godine = [12 , 76, 26, 6 , 23 , 21 ,29 ,16];
+// const drugeGodine =[12,76,8,10,5,14,28,98,101]
+
+// function returnAdults(ages){
+//     const nonAdults = [];
+//     for (const age of ages){
+//         if (age < 18)
+//         nonAdults.push(age);
+//     }
+//     return nonAdults;
+// }
+// // function returnAdults(ages) {
+// //     const adults = [];
+// //     for (const age of ages) { 
+// //         if (age >= 18) {
+// //             adults.push(age)
+// //         }
+// //     }
+
+// //     return adults;
+// // }
+
+// console.log(returnAdults(godine));
+
+//
 
 

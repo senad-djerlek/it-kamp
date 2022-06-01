@@ -502,8 +502,10 @@
 //             return age;
 //         }
 //     })
+//     return humanAge;
 
 // }
+// console.log(dogAgeToHuman(DATA1));
 
 // console.log(dogAgeToHuman(DATA1));
 
@@ -550,24 +552,24 @@
 // 500
 // );
 
-const DATA = [26, 18, 16, 22, 30, 28];
+// const DATA = [26, 18, 16, 22, 30, 28];
 
-const sumAvgAge = (ages) => {
+// const sumAvgAge = (ages) => {
 
-    const getAverage =
-    ages.reduce((prevValue, curValue) => prevValue + curValue) / ages.length;
+//     const getAverage =
+//     ages.reduce((prevValue, curValue) => prevValue + curValue) / ages.length;
 
-    return +getAverage.toFixed(2);
+//     return +getAverage.toFixed(2);
 
-// return average = zbirSvihGodina / ages.length;
-
-
+// // return average = zbirSvihGodina / ages.length;
 
 
 
-}
 
-console.log(sumAvgAge(DATA));
+
+// }
+
+// console.log(sumAvgAge(DATA));
 
 // // every
 // const ages = [32, 33, 16, 40];
@@ -590,21 +592,68 @@ console.log(sumAvgAge(DATA));
 
 //includes
 
-const array1 = [ 1 , 2 , 3];
+// const array1 = [ 1 , 2 , 3];
 
-console.log(array1.includes(2));
+// console.log(array1.includes(2));
 
 
-const pets = ["cat ", "dog", "bat"];
+// const pets = ["cat ", "dog", "bat"];
 
-console.log(pets.includes("dog"));
+// console.log(pets.includes("dog"));
 
-//join
+// //join
 
-const elements = ["fire","air","water", "trece"];
+// const elements = ["fire","air","water", "trece"];
 
-console.log(elements.join());
-// expected output : Fire,Air,Water
+// console.log(elements.join());
+// // expected output : Fire,Air,Water
 
-console.log(elements.join(" "));
+// console.log(elements.join(" "));
 
+
+
+//1
+// const miles = [15,20,1,60,45,120];
+
+// const milestoKm = (number) => {
+//     const konvertovanje = number.map(el => el * 1.60)
+
+//     const totalDistanceInKilometers = konvertovanje.reduce(
+//         (prev,cur) => prev + cur
+//     )
+//         return totalDistanceInKilometers;
+// }
+
+// console.log(milestoKm(miles));
+
+
+
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// const prviZadatak = (broj) => {
+//     const  parniBrojevi = broj.filter(el => el % 2 === 0);
+
+//    const novaVarijabla = parniBrojevi.map(el => el * el);
+
+//    const zbirVarijabli = novaVarijabla.reduce (
+//        (prev,cur) => prev + cur
+//    )
+
+
+//    return zbirVarijabli;
+
+    
+
+// }
+
+// console.log(prviZadatak(numbers));
+
+
+// 3.
+
+let strings = ["avengers", "captain america", "ironman", "black panther"];
+
+const upperCase = strings.map(el =>
+     el.toUpperCase()
+)
+console.log(upperCase);

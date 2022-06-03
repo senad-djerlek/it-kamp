@@ -651,9 +651,32 @@
 
 // 3.
 
-let strings = ["avengers", "captain america", "ironman", "black panther"];
+// let strings = ["avengers", "captain america", "ironman", "black panther"];
 
-const upperCase = strings.map(el =>
-     el.toUpperCase()
-)
-console.log(upperCase);
+// const upperCase = strings.map(el =>
+//      el.toUpperCase()
+// )
+// console.log(upperCase);
+
+// const niz = [1,2,3,4,5,6,7,8,9,10];
+// let suma = 0;
+// for(let i = 0; i < niz.length; i++){
+//      if (niz[i] % 2 === 0){
+//           console.log(niz[i]);
+//           suma += niz[i];
+//      }
+// }
+
+
+const niz = [1,2,3,4,5,6,7,8,9,10]
+
+const brojacNiza = (broj) => {
+    const parniBrojevi = (broj.filter(el => el % 2 === 0))
+
+    const zbirBrojeva = (parniBrojevi.map(el => el * el))
+
+    return zbirBrojeva;
+}
+// console.log("Suma je", suma);
+
+console.log(brojacNiza(niz));

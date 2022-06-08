@@ -563,10 +563,6 @@
 
 // // return average = zbirSvihGodina / ages.length;
 
-
-
-
-
 // }
 
 // console.log(sumAvgAge(DATA));
@@ -580,8 +576,7 @@
 //   return age > 18;
 // }
 
-
-//some 
+//some
 
 // const ages = [3, 10, 18, 20];
 
@@ -596,7 +591,6 @@
 
 // console.log(array1.includes(2));
 
-
 // const pets = ["cat ", "dog", "bat"];
 
 // console.log(pets.includes("dog"));
@@ -609,8 +603,6 @@
 // // expected output : Fire,Air,Water
 
 // console.log(elements.join(" "));
-
-
 
 //1
 // const miles = [15,20,1,60,45,120];
@@ -626,8 +618,6 @@
 
 // console.log(milestoKm(miles));
 
-
-
 // let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 // const prviZadatak = (broj) => {
@@ -639,15 +629,11 @@
 //        (prev,cur) => prev + cur
 //    )
 
-
 //    return zbirVarijabli;
-
-    
 
 // }
 
 // console.log(prviZadatak(numbers));
-
 
 // 3.
 
@@ -667,16 +653,90 @@
 //      }
 // }
 
+// const niz = [1,2,3,4,5,6,7,8,9,10];
 
-const niz = [1,2,3,4,5,6,7,8,9,10]
+// const brojacNiza = (broj) => {
+//     const parniBrojevi = (broj.filter(el => el % 2 === 0))
 
-const brojacNiza = (broj) => {
-    const parniBrojevi = (broj.filter(el => el % 2 === 0))
+//     const zbirBrojeva = (parniBrojevi.map(el => el * el))
 
-    const zbirBrojeva = (parniBrojevi.map(el => el * el))
+//     return zbirBrojeva;
+// }
+// // console.log("Suma je", suma);
 
-    return zbirBrojeva;
-}
-// console.log("Suma je", suma);
+// console.log(brojacNiza(niz));
 
-console.log(brojacNiza(niz));
+// const niz = [];
+
+// for (i= 0; i < 4000000000; i++){
+//     if (niz < 4000000000){
+//         return niz + 2
+//     }else {
+//         console.log(i)
+//     }
+// }
+
+// const novaVar = nizovi.reduce(
+//     (prev,cur) => prev + cur
+// )
+//     return novaVar
+
+// console.log(fibonaciNiz(niz));
+
+// const nizovi  = [1,2]
+
+// const fibonaciBroj = (brojevi) => {
+
+//     const noviBrojevi = brojevi.filter(el => el % 2 === 0)
+
+//     const zbirBrojeva = noviBrojevi.reduce(
+//         (prev,cur) => prev + cur
+//     )
+
+//         return zbirBrojeva;
+// }
+
+// console.log(fibonaciBroj(nizovi));
+
+//objekti
+
+// const myCar = {
+//     id:1,
+//     marka: "Audi",
+//     model: "a4",
+//     boja: "crvena",
+//     pogon: "prednji",
+//     menjac:"automatski",
+//     km: 24000,
+//     kontakt: [06211111,020222333],
+//     servis:{
+//         datum:"04 maj",
+//         km:230000,
+//         serviser: "Pasovic",
+//     },
+//     udaran:true,
+// };
+
+// console.log(myCar)
+// console.log("Moj auto je marke:",myCar["servis"]["serviser"]);
+
+//myCar.model === mycar["kljuc"]
+
+const radnik = {
+  firstName: "Bob",
+  lastName: "Euroblok",
+  fullName: function (){
+      return this.firstName + " " + this.lastName
+  },
+
+  adresa: {
+      ulica: "Avnoja",
+      broj: "bb",
+      grad: "Novi Pazar",
+      getAdress: function () {
+          return this.broj
+      },
+  },
+};
+
+console.log(radnik.adresa.getAdress());

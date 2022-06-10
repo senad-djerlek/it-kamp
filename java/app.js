@@ -722,21 +722,59 @@
 
 //myCar.model === mycar["kljuc"]
 
-const radnik = {
-  firstName: "Bob",
-  lastName: "Euroblok",
-  fullName: function (){
-      return this.firstName + " " + this.lastName
+// const radnik = {
+//   firstName: "Bob",
+//   lastName: "Euroblok",
+//   fullName: function (){
+//       return this.firstName + " " + this.lastName
+//   },
+
+//   adresa: {
+//       ulica: "Avnoja",
+//       broj: "bb",
+//       grad: "Novi Pazar",
+//       getAdress: function () {
+//           return this.broj
+//       },
+//   },
+// };
+
+// console.log(radnik.adresa.getAdress());
+
+// const kompjuter = {
+//     procesor: "LG",
+//     ram : "16",
+//     graficka: "Nvidia",
+//     mis:"Razer",
+//     uzmiMis: function (){
+//         return this.mis + " " + this.graficka
+//     },
+// }
+// console.log(kompjuter.uzmiMis());
+
+const car = {
+  mark: "Audi",
+  model: "a4",
+  maxSpeed: 220,
+  currentSpeed: 0,
+  drive: function (value) {
+    if (this.currentSpeed + value >  this.maxSpeed) {
+      alert("ne moze ovo ovako");
+    } else{
+        this.currentSpeed += value;
+    }
+  },
+  brake: function (value) {
+    return (this.currentSpeed -= value);
   },
 
-  adresa: {
-      ulica: "Avnoja",
-      broj: "bb",
-      grad: "Novi Pazar",
-      getAdress: function () {
-          return this.broj
-      },
+  stop: function () {
+    return (this.currentSpeed = 0);
   },
 };
 
-console.log(radnik.adresa.getAdress());
+console.log(car);
+
+car.drive(180);
+car.drive(43);
+

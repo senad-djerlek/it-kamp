@@ -752,29 +752,101 @@
 // }
 // console.log(kompjuter.uzmiMis());
 
-const car = {
-  mark: "Audi",
-  model: "a4",
-  maxSpeed: 220,
-  currentSpeed: 0,
-  drive: function (value) {
-    if (this.currentSpeed + value >  this.maxSpeed) {
-      alert("ne moze ovo ovako");
-    } else{
-        this.currentSpeed += value;
-    }
-  },
-  brake: function (value) {
-    return (this.currentSpeed -= value);
-  },
+// const car = {
+//   mark: "Audi",
+//   model: "a4",
+//   maxSpeed: 220,
+//   currentSpeed: 0,
+//   drive: function (value) {
+//     if (this.currentSpeed + value >  this.maxSpeed) {
+//       alert("ne moze ovo ovako");
+//     } else{
+//         this.currentSpeed += value;
+//     }
+//   },
+//   brake: function (value) {
+//     return (this.currentSpeed -= value);
+//   },
 
-  stop: function () {
-    return (this.currentSpeed = 0);
-  },
+//   stop: function () {
+//     return (this.currentSpeed = 0);
+//   },
+// };
+
+// console.log(car);
+
+// car.drive(180);
+// car.drive(43);
+
+// const students = [
+//   {name: "Faris",grade : 8, year: 2},
+//   {name: "Isko",grade : 10, year: 4},
+//   {name: "Aldin",grade : 8, year: 2},
+//   {name: "Amina",grade : 9, year: 4},
+//   {name: "Sabina",grade : 9, year: 3},
+//   {name: "Denis",grade : 7, year: 4},
+//   {name: "Senad",grade : 6, year: 1},
+// ];
+
+// function getAvgGrade(array){
+
+//   const average = array.map(el => el.grade);
+
+//   const averageNum = average.reduce(
+//     (prev,cur) =>
+//       prev + cur 
+//   ) / array.length;
+
+
+//   return +averageNum.toFixed(2);
+   
+
+
+// }
+
+// console.log(getAvgGrade(students));'
+
+
+const person = {
+  name: "John Doe",
+  age: 22,
 };
 
-console.log(car);
+const car = {
+  name: "Audi",
+}
 
-car.drive(180);
-car.drive(43);
+function sayHello () {
+  console.log(`Hello ${this.name}`);
+}
 
+sayHello.call(person);
+
+
+let hrana = {food: "Pizza"};
+
+function favFood (text,rating) {
+  return `${this.food}  ${text} ${rating}`;
+}
+
+console.log(favFood.call(hrana, "je ukusna" , 9));
+
+
+console.log(favFood.apply(hrana, ["nije ukusna", 6]));  //ista stvar samo se pravi niz ako ima vise argumenata lakse apply a ovako su iste
+
+//i jedna i druga funkcija menja this i kaci ga za odredjeni objekat
+const bindFunc = favFood.bind(hrana);
+
+console.log(bindFunc('nije nesto', 9));
+
+//bind je pozeljno da se stavi u varijablu da bi mogla da vrati funkciju, inace vraca ko definiciju u consolu
+
+
+// bind se ne kaci na funk nego bind vraca funkciju
+
+
+const ime = "John Doe";
+const zanimanje = "ubica";
+const godine = 40;
+
+console.log(`${ime} je ${zanimanje}, i ima ${godine} godina`)

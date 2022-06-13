@@ -849,4 +849,8 @@ const ime = "John Doe";
 const zanimanje = "ubica";
 const godine = 40;
 
-console.log(`${ime} je ${zanimanje}, i ima ${godine} godina`)
+console.log(`${ime} je ${zanimanje}, i ima ${godine} 0godina`);
+
+const numArray = [10, 30 ,50 , 100, 200,1000];
+
+console.log(Math.max.apply(null, numArray)); // brz nacin da nadjemo najveci broj u nizu

@@ -807,37 +807,37 @@
 // console.log(getAvgGrade(students));'
 
 
-const person = {
-  name: "John Doe",
-  age: 22,
-};
+// const person = {
+//   name: "John Doe",
+//   age: 22,
+// };
 
-const car = {
-  name: "Audi",
-}
+// const car = {
+//   name: "Audi",
+// }
 
-function sayHello () {
-  console.log(`Hello ${this.name}`);
-}
+// function sayHello () {
+//   console.log(`Hello ${this.name}`);
+// }
 
-sayHello.call(person);
-
-
-let hrana = {food: "Pizza"};
-
-function favFood (text,rating) {
-  return `${this.food}  ${text} ${rating}`;
-}
-
-console.log(favFood.call(hrana, "je ukusna" , 9));
+// sayHello.call(person);
 
 
-console.log(favFood.apply(hrana, ["nije ukusna", 6]));  //ista stvar samo se pravi niz ako ima vise argumenata lakse apply a ovako su iste
+// let hrana = {food: "Pizza"};
 
-//i jedna i druga funkcija menja this i kaci ga za odredjeni objekat
-const bindFunc = favFood.bind(hrana);
+// function favFood (text,rating) {
+//   return `${this.food}  ${text} ${rating}`;
+// }
 
-console.log(bindFunc('nije nesto', 9));
+// console.log(favFood.call(hrana, "je ukusna" , 9));
+
+
+// console.log(favFood.apply(hrana, ["nije ukusna", 6]));  //ista stvar samo se pravi niz ako ima vise argumenata lakse apply a ovako su iste
+
+// //i jedna i druga funkcija menja this i kaci ga za odredjeni objekat
+// const bindFunc = favFood.bind(hrana);
+
+// console.log(bindFunc('nije nesto', 9));
 
 //bind je pozeljno da se stavi u varijablu da bi mogla da vrati funkciju, inace vraca ko definiciju u consolu
 
@@ -845,12 +845,110 @@ console.log(bindFunc('nije nesto', 9));
 // bind se ne kaci na funk nego bind vraca funkciju
 
 
-const ime = "John Doe";
-const zanimanje = "ubica";
-const godine = 40;
+// const ime = "John Doe";
+// const zanimanje = "ubica";
+// const godine = 40;
 
-console.log(`${ime} je ${zanimanje}, i ima ${godine} 0godina`);
+// console.log(`${ime} je ${zanimanje}, i ima ${godine} 0godina`);
 
-const numArray = [10, 30 ,50 , 100, 200,1000];
+// const numArray = [10, 30 ,50 , 100, 200,1000];
 
-console.log(Math.max.apply(null, numArray)); // brz nacin da nadjemo najveci broj u nizu
+// console.log(Math.max.apply(null, numArray)); // brz nacin da nadjemo najveci broj u nizu
+
+// const automobil = {
+//   marka: "audi",
+//   model: "a4",
+// }
+
+// function uzmiMarku (jeOcena) {
+//   console.log(`${this.marka} ${this.model}`)
+// }
+
+//  uzmiMarku.call(automobil)
+
+// const person1 = {
+//   name: "John Doe",
+//   age: 48,
+//   job: "Employed",
+//   adress: "USA",
+//   kids: 4,
+// };
+
+// console.log(Object.keys(person)); // vraca niz kljuceva
+
+// console.log(Object.values(person)); // vraca niz objekata
+
+// person.phone = "38155511122"; // dodavanje
+
+//Object.freeze - zamrzava sve i nije moguce ni dodavanje ni menjanje
+
+// Object.seal(person); -- moze samo da se promeni postojeci keyvalue pair
+
+// person.name = "Drugi neko";
+// person.mentor = "Treci neko";
+
+// console.log(Object.entries(person)); //pravi od svega niz 
+
+// const person2 = person1;
+
+// person2.name = "Isko"
+
+// console.log(person1);
+
+// console.log(Object.is(person1, person2))
+
+// const names = ["Faris" , "aldin", "senad","dzenan","sabina"];
+
+// const newNames = ["isko" , ...names , "hamza"];
+
+// console.log(names);
+// console.log(newNames);
+
+
+// const numbers = [1,2,3,1,5,2,7,10];
+
+// const names = ["john", "cena", "undertaker"];
+
+// const spojeni = [...names, ...numbers]
+
+// console.log(spojeni);
+
+// const nemaDuplih = [...new Set(numbers)]; // new Set izbacuje duplikate i vraca niz bez duplikata
+
+// const pow = nemaDuplih.map(el => el * el);
+
+// console.log(pow);
+
+//spread operator radi samo izmedju kockastih i viticastih zagrada
+
+// const person = {
+//   name:"John",
+//   state: "Usa",
+// };
+
+// const extendedPerson = {
+//   ...person,
+//   phone:"38152213",
+
+// }
+
+// console.log(extendedPerson)
+
+const movies = [
+  {title: "Movies 1", rating: 8, budget: "230M"},
+  {title: "Movies 1", rating: 8, budget: "230M"},
+  {title: "Movies 1", rating: 8, budget: "230M"},
+  {title: "Movies 1", rating: 8, budget: "230M"},
+  {title: "Movies 1", rating: 8, budget: "230M"},
+    ]
+
+const newMoviesArray = movies.map(movie => {
+  return{
+    title: movie.title,
+    budget:movie.budget,
+  }
+});
+
+console.log(newMoviesArray);
+
+

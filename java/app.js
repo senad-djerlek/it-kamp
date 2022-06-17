@@ -934,21 +934,56 @@
 
 // console.log(extendedPerson)
 
-const movies = [
-  {title: "Movies 1", rating: 8, budget: "230M"},
-  {title: "Movies 1", rating: 8, budget: "230M"},
-  {title: "Movies 1", rating: 8, budget: "230M"},
-  {title: "Movies 1", rating: 8, budget: "230M"},
-  {title: "Movies 1", rating: 8, budget: "230M"},
-    ]
+// const movies = [
+//   {title: "Movies 1", rating: 8, budget: "230M"},
+//   {title: "Movies 1", rating: 8, budget: "230M"},
+//   {title: "Movies 1", rating: 8, budget: "230M"},
+//   {title: "Movies 1", rating: 8, budget: "230M"},
+//   {title: "Movies 1", rating: 8, budget: "230M"},
+//     ]
 
-const newMoviesArray = movies.map(movie => {
-  return{
-    title: movie.title,
-    budget:movie.budget,
-  }
-});
+// const newMoviesArray = movies.map(movie => {
+//   return{
+//     title: movie.title,
+//     budget:movie.budget,
+//   }
+// });
 
-console.log(newMoviesArray);
+// console.log(newMoviesArray);
+
+// function drugiPosao(){
+//   console.log("drugi posao!!!")
+// }
+
+// function nekiPosao(arg1) {
+//   console.log("pocetak posla")
+// }
+
+// console.log("comanda 1");
+// console.log("comanda 2");
+
+// setTimeout () ==> 
 
 
+function drugiPosao() {
+  console.log("niz parnih");
+}
+
+function nekiPosao(arg1){
+  console.log("ceo niz");
+
+  setTimeout(() => {
+    console.log("filter niza");
+
+    arg1();
+  }, 1000)
+}
+nekiPosao(drugiPosao);
+
+console.log("komanda");
+console.log("komanda");
+console.log("komanda");
+
+///youdontknowjs
+
+///eloquent javascript

@@ -965,25 +965,124 @@
 // setTimeout () ==> 
 
 
-function drugiPosao() {
-  console.log("niz parnih");
-}
+// function drugiPosao() {
+//   console.log("niz parnih");
+// }
 
-function nekiPosao(arg1){
-  console.log("ceo niz");
+// function nekiPosao(arg1){
+//   console.log("ceo niz");
 
-  setTimeout(() => {
-    console.log("filter niza");
+//   setTimeout(() => {
+//     console.log("filter niza");
 
-    arg1();
-  }, 1000)
-}
-nekiPosao(drugiPosao);
+//     arg1();
+//   }, 5000)
+// }
+// nekiPosao(drugiPosao);
 
-console.log("komanda");
-console.log("komanda");
-console.log("komanda");
+// console.log("komanda");
+// console.log("komanda");
+// console.log("komanda");
+
+
+
+// function jedanDan () {
+//   console.log("dan")
+// }
+
+// function drugiDan (dani) {
+//   console.log("drugi dan")
+
+//   setTimeout(() => {
+//     console.log("treci dan");
+
+//     dani();
+//   }, 3000);
+
+
+// }
+
+// function cetvrtiDan(){
+//   console.log("cetvrti dan");
+
+//   setTimeout (() => {
+    
+//     console.log("cetvrti dani");
+
+
+
+//   }, 3000)
+// }
+// drugiDan(jedanDan)
+
+// drugiDan(cetvrtiDan)
 
 ///youdontknowjs
 
 ///eloquent javascript
+
+//javascript visualizer 9000
+
+// function myFunc(el) {
+//     return el * 2
+// }
+
+// res = [1,2,3,4,5].map(el => {        //map vraca ceo niz sa izmenama,pravi isto novi niz iste duzine sa promenama.
+//     return el * 2
+// });
+
+// console.log(res)
+
+// console.log(res);
+
+// res = [1,2,3,4,5].filter(el => {      //filter pravi novi niz i vraca duzinu niza u zavisnosti koliko elemenata predje uslov
+//     if (el >= 3){
+//         return el;
+//     }
+// })
+
+
+// console.log(res);
+
+
+// console.log(1);
+// console.log(2);
+
+// func = () => {
+//     console.log(3)
+// };
+
+// setTimeout(func,1000);
+
+
+// console.log(4); 
+
+
+posao = new Promise((resolve,reject) =>{
+    response = 200;
+
+    for (let i = 0; i<9000000000; i++){}
+    if (response === 201){
+        resolve([1,2,3,4,5])
+    } else {
+        reject("Greskaa");
+    }
+});
+
+posao.then((data) => {
+    console.log("uspesno povukao podatke",data);
+    arr = data.filter(el => el % 2=== 0);
+    return arr;
+})
+.then((arg1) => {
+    console.log("druga func",arg1)
+})
+.catch((err) =>  {
+    console.log("neuspesno povukao podatke",err);
+})
+.finally(() => {
+    console.log("Disati");
+})
+
+
+

@@ -794,18 +794,14 @@
 
 //   const averageNum = average.reduce(
 //     (prev,cur) =>
-//       prev + cur 
+//       prev + cur
 //   ) / array.length;
 
-
 //   return +averageNum.toFixed(2);
-   
-
 
 // }
 
 // console.log(getAvgGrade(students));'
-
 
 // const person = {
 //   name: "John Doe",
@@ -822,7 +818,6 @@
 
 // sayHello.call(person);
 
-
 // let hrana = {food: "Pizza"};
 
 // function favFood (text,rating) {
@@ -830,7 +825,6 @@
 // }
 
 // console.log(favFood.call(hrana, "je ukusna" , 9));
-
 
 // console.log(favFood.apply(hrana, ["nije ukusna", 6]));  //ista stvar samo se pravi niz ako ima vise argumenata lakse apply a ovako su iste
 
@@ -841,9 +835,7 @@
 
 //bind je pozeljno da se stavi u varijablu da bi mogla da vrati funkciju, inace vraca ko definiciju u consolu
 
-
 // bind se ne kaci na funk nego bind vraca funkciju
-
 
 // const ime = "John Doe";
 // const zanimanje = "ubica";
@@ -887,7 +879,7 @@
 // person.name = "Drugi neko";
 // person.mentor = "Treci neko";
 
-// console.log(Object.entries(person)); //pravi od svega niz 
+// console.log(Object.entries(person)); //pravi od svega niz
 
 // const person2 = person1;
 
@@ -903,7 +895,6 @@
 
 // console.log(names);
 // console.log(newNames);
-
 
 // const numbers = [1,2,3,1,5,2,7,10];
 
@@ -962,8 +953,7 @@
 // console.log("comanda 1");
 // console.log("comanda 2");
 
-// setTimeout () ==> 
-
+// setTimeout () ==>
 
 // function drugiPosao() {
 //   console.log("niz parnih");
@@ -984,8 +974,6 @@
 // console.log("komanda");
 // console.log("komanda");
 
-
-
 // function jedanDan () {
 //   console.log("dan")
 // }
@@ -999,17 +987,14 @@
 //     dani();
 //   }, 3000);
 
-
 // }
 
 // function cetvrtiDan(){
 //   console.log("cetvrti dan");
 
 //   setTimeout (() => {
-    
+
 //     console.log("cetvrti dani");
-
-
 
 //   }, 3000)
 // }
@@ -1041,9 +1026,7 @@
 //     }
 // })
 
-
 // console.log(res);
-
 
 // console.log(1);
 // console.log(2);
@@ -1054,35 +1037,83 @@
 
 // setTimeout(func,1000);
 
+// console.log(4);
 
-// console.log(4); 
+// posao = new Promise((resolve,reject) =>{
+//     response = 200;
+
+//     for (let i = 0; i<10; i++){}
+//     if (response === 200){
+//         resolve([1,2,3,4,5])
+//     } else {
+//         reject("Greskaa");
+//     }
+// });
+
+// posao.then((data) => {
+//     console.log("uspesno povukao podatke",data);
+//     arr = data.filter(el => el > 2);
+//     return arr;
+// })
+// .then((arg1) => {
+//     console.log("druga func",arg1);
+//     return arg1
+// })
+// .then((arg2) =>{
+//     console.log("treca func", arg2);
+// })
+// .catch((err) =>  {
+//     console.log("neuspesno povukao podatke",err);
+// })
+// .finally(() => {
+//     console.log("Disati");
+// })
+
+// for (let i = 0; i <10; i++){
+
+//     setTimeout(() =>{
+//         console.log(i);
+//     },0);
+// }
+
+// for (var i = 0; i <10; i++){
+
+//     setTimeout(() =>{
+//         console.log(i);
+//     },0);
+// }
+
+// function mojaFunc() {
+//   a = 10;
+//   b = 123;
+//   c = 123;
+//   console.log(b);
+//   console.log(c);
+
+//   function drugafunc(arg1) {
+//     console.log("drugaa");
+//     console.log(arg1 + a);
+//   }
+//   return drugafunc;
+// }
+
+// // mojaFunc()();//uzmi mi vrednost funkcije,i izvrsi blok kod ponovo te funkcije i orikazi ga
+// res = mojaFunc();
+
+// res(5); //mehanizam closure
 
 
-posao = new Promise((resolve,reject) =>{
-    response = 200;
 
-    for (let i = 0; i<9000000000; i++){}
-    if (response === 201){
-        resolve([1,2,3,4,5])
-    } else {
-        reject("Greskaa");
-    }
-});
-
-posao.then((data) => {
-    console.log("uspesno povukao podatke",data);
-    arr = data.filter(el => el % 2=== 0);
-    return arr;
-})
-.then((arg1) => {
-    console.log("druga func",arg1)
-})
-.catch((err) =>  {
-    console.log("neuspesno povukao podatke",err);
-})
-.finally(() => {
-    console.log("Disati");
-})
+function makeAdder(x){
+    return function(y){
+        return x+y;
+    };
+}
 
 
+// var add5 = makeAdder(5);
+// var add10 = makeAdder(10);
+
+console.log(makeAdder(5)(2));
+console.log(makeAdder(10)(2));
 

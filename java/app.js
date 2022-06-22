@@ -1104,16 +1104,29 @@
 
 
 
-function makeAdder(x){
-    return function(y){
-        return x+y;
-    };
-}
+// function makeAdder(x){
+//     return function(y){
+//         return x+y;
+//     };
+// }
 
 
-// var add5 = makeAdder(5);
-// var add10 = makeAdder(10);
+// // var add5 = makeAdder(5);
+// // var add10 = makeAdder(10);
 
-console.log(makeAdder(5)(2));
-console.log(makeAdder(10)(2));
+// console.log(makeAdder(5)(2));
+// console.log(makeAdder(10)(2));
+
+
+fetch("https://catfact.ninja/facts")
+.then((result) =>{
+    res = result.json();
+    return res;
+})
+.then((r) => {
+    console.log(r)
+})
+.catch((err) => {
+    console.log(err, "===========")
+});
 

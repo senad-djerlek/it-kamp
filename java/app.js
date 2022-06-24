@@ -1118,15 +1118,48 @@
 // console.log(makeAdder(10)(2));
 
 
-fetch("https://catfact.ninja/facts")
-.then((result) =>{
-    res = result.json();
-    return res;
-})
-.then((r) => {
-    console.log(r)
-})
-.catch((err) => {
-    console.log(err, "===========")
-});
+// fetch("https://catfact.ninja/facts")
+// .then((result) =>{
+//     res = result.json();
+//     return res;
+// })
+// .then((r) => {
+//     console.log(r)
+// })
+// .catch((err) => {
+//     console.log(err, "===========")
+// });
+
+
+
+
+// prom = new Promise((res,rej)=>{
+//     res();
+// })
+
+// prom.then(()=>{
+//     prom.then(()=>{
+//         console.log("B");
+//     });
+//     console.log("A");
+// });
+
+// prom.then(() =>{
+//     console.log("C");
+// 
+
+const BASE_URL = "https://jsonplaceholder.typicode.com"
+
+const getUsers = async () =>{
+    // fetch("https://jsonplaceholder.typicode.com/comments?postId=1")
+    // // .then((response)=> response.json())
+    const response = await fetch(`${BASE_URL}/users`);
+    const posts = await response.json();
+    return posts.map(el => {
+        return {ime:"Faris" , id: el.id}
+    });
+};
+
+getUsers().then((res) => console.log(res))
+
 

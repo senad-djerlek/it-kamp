@@ -1148,18 +1148,77 @@
 //     console.log("C");
 // 
 
-const BASE_URL = "https://jsonplaceholder.typicode.com"
+// const BASE_URL = "https://jsonplaceholder.typicode.com"
 
-const getUsers = async () =>{
-    // fetch("https://jsonplaceholder.typicode.com/comments?postId=1")
-    // // .then((response)=> response.json())
-    const response = await fetch(`${BASE_URL}/users`);
-    const posts = await response.json();
-    return posts.map(el => {
-        return {ime:"Faris" , id: el.id}
-    });
-};
+// const getUsers = async () =>{
+//     // fetch("https://jsonplaceholder.typicode.com/comments?postId=1")
+//     // // .then((response)=> response.json())
+//     const response = await fetch(`${BASE_URL}/users`);
+//     const posts = await response.json();
+//     return posts.map(el => {
+//         return {ime:"Faris" , id: el.id}
+//     });
+// };
 
-getUsers().then((res) => console.log(res))
+// getUsers().then((res) => console.log(res))
 
+
+// const URL = "https://jsonplaceholder.typicode.com"
+
+// const getUsersFromGoogle = async () => {
+
+//     const users = await fetch(`${URL}/users`);
+
+//     const userPosts = await users.json();
+
+//     return userPosts.map(el => {
+//         return {ime :"Faris" , id: el.id}
+//     });
+// };
+
+// getUsersFromGoogle().then((user) => console.log(user))
+
+// const url = "https://jsonplaceholder.typicode.com"
+
+
+// const getUsers = async() => {
+//     const users = await fetch(`${url}/users`);
+
+//     const getUser = await users.json();
+
+//     return getUser.map(el => {
+//         return {ime:"Senad" , id: el.id};
+//     });
+// }
+
+// getUsers().then((user => console.log(user)));
+
+
+// // const myPromise = new Promise((resolve, reject) => {
+// //     setTimeout(() => {
+// //       resolve('foo');
+// //     }, 300);
+// //   });
+  
+// //   myPromise
+// //     .then(handleResolvedA, handleRejectedA)
+// //     .then(handleResolvedB, handleRejectedB)
+//     .then(handleResolvedC, handleRejectedC);
+
+// const url = "https://jsonplaceholder.typicode.com"
+
+
+// const getPosts = async() => {
+
+//   const posts = await fetch(`${url}/users`);
+
+//   const getPosts = await posts.json();
+
+//   return  getPosts.map(el => {
+//     return {marka: "Bmw" , vozilo: "a"}
+//   });
+
+// }
+
+// getPosts().then((marka) => console.log(marka));
 

@@ -1102,21 +1102,17 @@
 
 // res(5); //mehanizam closure
 
-
-
 // function makeAdder(x){
 //     return function(y){
 //         return x+y;
 //     };
 // }
 
-
 // // var add5 = makeAdder(5);
 // // var add10 = makeAdder(10);
 
 // console.log(makeAdder(5)(2));
 // console.log(makeAdder(10)(2));
-
 
 // fetch("https://catfact.ninja/facts")
 // .then((result) =>{
@@ -1129,9 +1125,6 @@
 // .catch((err) => {
 //     console.log(err, "===========")
 // });
-
-
-
 
 // prom = new Promise((res,rej)=>{
 //     res();
@@ -1146,7 +1139,7 @@
 
 // prom.then(() =>{
 //     console.log("C");
-// 
+//
 
 // const BASE_URL = "https://jsonplaceholder.typicode.com"
 
@@ -1161,7 +1154,6 @@
 // };
 
 // getUsers().then((res) => console.log(res))
-
 
 // const URL = "https://jsonplaceholder.typicode.com"
 
@@ -1180,7 +1172,6 @@
 
 // const url = "https://jsonplaceholder.typicode.com"
 
-
 // const getUsers = async() => {
 //     const users = await fetch(`${url}/users`);
 
@@ -1193,20 +1184,18 @@
 
 // getUsers().then((user => console.log(user)));
 
-
 // // const myPromise = new Promise((resolve, reject) => {
 // //     setTimeout(() => {
 // //       resolve('foo');
 // //     }, 300);
 // //   });
-  
+
 // //   myPromise
 // //     .then(handleResolvedA, handleRejectedA)
 // //     .then(handleResolvedB, handleRejectedB)
 //     .then(handleResolvedC, handleRejectedC);
 
 // const url = "https://jsonplaceholder.typicode.com"
-
 
 // const getPosts = async() => {
 
@@ -1222,3 +1211,95 @@
 
 // getPosts().then((marka) => console.log(marka));
 
+// const noviUrl = "https://jsonplaceholder.typicode.com";
+
+// const uzmiClanove = async () =>{
+//     const noviClanovi = await fetch(`${noviUrl}/users`);
+
+//     const uzmiClanove = await noviClanovi.json();
+
+//     return uzmiClanove;
+// }
+
+// const myUsers = uzmiClanove().then((uzmi) => {
+//     const noviUzeri = uzmi.map(el => {
+//         return {
+//             name: el.name,
+//             username: el.username,
+//             phone: el.phone,
+//         };
+//     })
+//     return noviUzeri;
+// });
+
+// myUsers.then((res) => console.log(res));
+
+//sta je call blind apply
+// razlika izmedju let i const
+//dev questions
+
+// const NOVI_URL = "//jsonplaceholder.typicode.com"
+
+// const  uzmiUzere = async () => {
+//     const uzmiPhotos = await fetch (`${NOVI_URL}/users`);
+
+//     const posrednji = uzmiPhotos.json();
+
+//     return posrednji;
+// }
+
+// uzmiUzere().then((res => res.map(el => {
+//     return{
+//         name: "Senad", id: "Senad",
+//         vorname: "Senad", id: el.id
+//     }
+// }))).then(res => console.log(res));
+
+// function greeting(name) {
+//     alert('Hello ' + name);
+//   }
+
+//   function processUserInput(callback) {
+//     var name = prompt('Please enter your name.');
+//     callback(name);
+//   }
+
+//   processUserInput(greeting);
+
+// const niz = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// const nizTwo = [3, 4, 5, 7, 10];
+
+// const spojeniNizovi = niz.concat(nizTwo);
+
+// console.log(spojeniNizovi);
+
+// const noviNiz = [2,4,6,8,10,4,10];
+
+// novaFunc = (broj) => {
+//    const noviNiz = broj.map(el => el * 2);
+//    const spajanje = noviNiz.reduce(
+//     (prev,cur) => prev + cur
+//    )
+//    return spajanje;
+
+// }
+
+// console.log(novaFunc(noviNiz));
+
+// novaFunkcija = (broj) => {  
+//   const parniBrojevi = broj.filter((el) => el % 2 === 0);
+
+//   const mnozenjeZaDva = parniBrojevi.map(el => el * 2);
+
+//   return mnozenjeZaDva.reduce(
+//     (prev,cur) => prev + cur
+//   );
+
+// };
+
+// console.log(novaFunkcija(spojeniNizovi));
+
+// const jedanString = "String"
+// const drugiString = "Drugi string"
+
+// console.log(jedanString.concat(drugiString));

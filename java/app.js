@@ -1218,8 +1218,13 @@
 
 //     const uzmiClanove = await noviClanovi.json();
 
-//     return uzmiClanove;
+//     return uzmiClanove.map(el => {
+//         return {ime:"Senad"}
+//     })
+    
 // }
+// uzmiClanove().then((el) => console.log(el));
+
 
 // const myUsers = uzmiClanove().then((uzmi) => {
 //     const noviUzeri = uzmi.map(el => {
